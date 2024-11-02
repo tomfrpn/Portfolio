@@ -1,0 +1,158 @@
+/* Style de base pour tout le site */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Style pour le corps de la page */
+body {
+    line-height: 1.6;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Section Accueil */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 40px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+/* Section Projets */
+#projets {
+    padding: 40px 20px;
+}
+
+#projets h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.projet {
+    background-color: #fff;
+    padding: 20px;
+    margin: 10px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+}
+
+.projet h3 {
+    margin-bottom: 10px;
+}
+
+.projet p {
+    margin-bottom: 10px;
+    color: #666;
+}
+
+.projet img {
+    max-width: 100%;
+    border-radius: 4px;
+}
+
+/* Section Contact */
+#contact {
+    padding: 40px 20px;
+    background-color: #eee;
+}
+
+#contact h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+    color: #333;
+}
+
+input, textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+button {
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+button:hover {
+    background-color: #555;
+}
+/* Styles pour les écrans de moins de 768px (tablettes et mobiles) */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    header p {
+        font-size: 1em;
+    }
+
+    #projets, #contact {
+        padding: 20px;
+    }
+
+    .projet {
+        padding: 15px;
+    }
+
+    form {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    input, textarea, button {
+        font-size: 1em;
+    }
+}
+
+/* Styles pour les écrans de moins de 480px (petits écrans, téléphones) */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    .projet {
+        padding: 10px;
+    }
+
+    #projets h2, #contact h2 {
+        font-size: 1.5em;
+    }
+
+    input, textarea, button {
+        font-size: 0.9em;
+    }
+}
