@@ -1,3 +1,35 @@
+/* Style pour la tête de page fixe */
+.sticky-header {
+    position: sticky;
+    top: 0; /* Fixe l'en-tête en haut de la page */
+    z-index: 1000; /* Assure qu'elle reste au-dessus du contenu */
+    background-color: #333; /* Couleur de fond */
+    color: white; /* Couleur du texte */
+    padding: 10px 20px; /* Espacement intérieur */
+    display: flex;
+    justify-content: space-between; /* Sépare le titre et la navigation */
+    align-items: center; /* Aligne verticalement */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Ombre sous l'en-tête */
+}
+
+/* Style pour la navigation dans l'en-tête */
+.sticky-header nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px; /* Espacement entre les liens */
+    font-weight: bold;
+}
+
+.sticky-header nav a:hover {
+    text-decoration: underline;
+}
+
+/* Sections pour tester le défilement */
+main section {
+    padding: 100px 20px;
+    border-bottom: 1px solid #ddd;
+}
+
 /* Style de base pour tout le site */
 * {
     margin: 0;
